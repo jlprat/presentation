@@ -5,3 +5,40 @@
 	height: 144px; 
 	margin:auto;
 }
+
+
+#example.red.box {
+	background-color: red;
+	width: 400px;
+	height: 200px;
+	margin: auto;
+    -webkit-transition: all 3s;
+}
+.rotate {
+	-webkit-transform: perspective( 400px ) rotateY( 45deg );
+	-webkit-transition: all 3s;
+}
+
+li.green {
+    color : green;
+}
+li.red {
+    color : red;
+}
+ul.checkmark li:before {
+    content:"\2713\0020";
+}
+
+#example2 {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background: red;
+}
+#example2.animate {
+    -webkit-animation: myfirst 5s;
+}
+@-webkit-keyframes myfirst {
+    from {background: red;}
+    to {background: blue;}
+}
