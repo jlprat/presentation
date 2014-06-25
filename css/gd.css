@@ -55,7 +55,7 @@ button {
     min-height: 40px;
 }
 
-.bigdiv {
+.big.div {
     width: 80px;
     height: 80px;
     margin: 10px auto !important;
@@ -68,11 +68,11 @@ button {
     -webkit-border-radius: 40px;
 }
 
-.red {
+.div.red {
     background-color: red;
 }
 
-.largediv {
+.large.div {
     width: 380px;
     height: 80px;
     margin: 10px auto !important;
