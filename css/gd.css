@@ -1,5 +1,5 @@
 #gamesSlides .logo {
-	background-image: url('../img/1024_GameDuell_logo.png'); 
+	background-image: url('../img/retina_GameDuell_logo.png'); 
 	background-size: cover;
 	width: 482px; 
 	height: 144px; 
@@ -38,6 +38,13 @@ ul.checkmark li:before {
 #example2.animate {
     -webkit-animation: myfirst 5s;
 }
+
+#gamesSlides .h1,
+#gamesSlides .h2,
+#gamesSlides .h3 {
+    font-family: 'Chewy', sans-serif;
+}
+
 @-webkit-keyframes myfirst {
     from {background: red;}
     to {background: blue;}
