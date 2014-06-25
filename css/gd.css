@@ -42,3 +42,35 @@ ul.checkmark li:before {
     from {background: red;}
     to {background: blue;}
 }
+
+button {
+    min-width: 60px;
+    min-height: 40px;
+}
+
+.bigdiv {
+    width: 80px;
+    height: 80px;
+    margin: 10px auto !important;
+}
+
+.roundBorders {
+    -webkit-border-radius: 20px;
+}
+.circleBorders {
+    -webkit-border-radius: 40px;
+}
+
+.red {
+    background-color: red;
+}
+
+.largediv {
+    width: 380px;
+    height: 80px;
+    margin: 10px auto !important;
+}
+
+.blaugrana {
+    background-image: -webkit-linear-gradient(top, red 0%, blue 50%, blue 50%, red 100%);
+}

@@ -459,11 +459,106 @@ end
                 </section>
                 <section>
                     <h2>Nou Marcat</h2>
-                    <span>Esperi un moment&hellip;</span><br/>
-                    <progress>working...</progress><br/>
-                    <span>O bé&hellip;</span><br/>
-                    <progress id="loader" max="100" value="40">working...</progress><br/>
-                    <button onclick="document.getElementById('loader').value += 10">+10!</button>
+                    <span>Carregant, esperi un moment</span><br/>
+                    <div>
+                        <progress id="loader" max="100" value="40">working...</progress><br/>
+                        <button onclick="document.getElementById('loader').value += 10">+10!</button>
+                    </div>
+                </section>
+                <section>
+                    <h2>Nou Marcat</h2>
+                    <pre><code>
+<span>Carregant, esperi un moment</span><br/>
+<progress id="loader" max="100" value="40">working...</progress><br/>
+<button onclick="document.getElementById('loader').value += 10">+10!</button>
+                    </code></pre>
+                </section>
+                <section>
+                    <h2>Nou Marcat</h2>
+                    <meter id="liveMeter" min="0" max="100" optimum="100" low="30" high="60" value="100">Live</meter><br/>
+                    <button onclick="document.getElementById('liveMeter').value -= 10">Hit it!</button>
+                </section>
+                <section>
+                    <h2>Nou Marcat</h2>
+                    <pre><code data-trim>
+<meter id="live" min="0" max="100" optimum="100" low="30" high="60" value="100">
+    Live</meter><br/>
+<button onclick="document.getElementById('live').value -= 10">
+    Hit it!</button>
+                    </code></pre>
+                </section>
+                <section>
+                    <h2>Nou Marcat</h2>
+                    <article>
+                        <p>Aquí aniria un conjunt de paraules que tenen sentit en un tot, per exemple un post en un blog, l'ajuda d'un joc... Això va en benefici de la web semàntica</p>
+                        <figure>
+                            <img src="img/fluffy.png" width="125px" height="125px">
+                            <figcaption>Aquesta és la nostra mascota Fluffy</figcaption>
+                        </figure>
+                    </article>
+                </section>
+                <section>
+                    <h2>Nou Marcat</h2>
+                    <pre><code data-trim>
+<article>
+    <p>Aquí aniria un conjunt de paraules que tenen sentit en un tot, per exemple un post en un blog, l'ajuda d'un joc... Això va en benefici de la web semàntica</p>
+    <figure>
+        <img src="img/fluffy.png" width="125px" height="125px">
+        <figcaption>Aquesta és la nostra mascota Fluffy</figcaption>
+    </figure>
+</article>
+                    </code></pre>
+                </section>
+                <section>
+                    <h2>CSS3 - Fonts</h2>
+                     <pre><code>
+@font-face {
+    font-family: 'League Gothic';
+    src: url("../../lib/font/league_gothic-webfont.eot");
+    src: url("../../lib/font/league_gothic-webfont.eot?#iefix") format("embedded-opentype"), url("../../lib/font/league_gothic-webfont.woff") format("woff"), url("../../lib/font/league_gothic-webfont.ttf") format("truetype"), url("../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+                     </code></pre>
+                </section>
+                <section>
+                    <h2>CSS3 - Borders</h2>
+                    <div class="roundBorders bigdiv red"></div>
+                    <div class="circleBorders bigdiv red"></div>
+                </section>
+                <section>
+                    <h2>CSS3 - Borders</h2>
+                    <pre><code data-trim>
+<style>
+    .bigdiv {
+    width: 80px; height: 80px;
+    }
+    .roundBorders {
+    -webkit-border-radius: 20px;
+    }
+    .circleBorders {
+    -webkit-border-radius: 40px;
+    }
+</style>
+<div class="roundBorders bigdiv red"></div>
+<div class="circleBorders bigdiv red"></div>
+                    </code></pre>
+                </section>
+                <section>
+                    <h2>CSS3 - Gradients</h2>
+                    <div class="blaugrana largediv"></div>
+                </section>
+                <section>
+                    <h2>CSS3 - Gradients</h2>
+                    <pre><code>
+<style>
+    .blaugrana {
+        background-image: -webkit-linear-gradient(top, red 0%,
+            blue 50%, blue 50%, red 100%);
+    }
+</style>
+<div class="blaugrana largediv"></div>
+                    </code></pre>
                 </section>
                 <section>
                     <h2>CSS3 Transform</h2>
@@ -567,23 +662,23 @@ end
                 <section>
                     <h2>WebSockets - Exemple</h2>
                     <pre><code data-trim>
-                        var websocket = new Websocket("ws://myserver.com/path/to/connect");
-                        websocket.onopen = function (event) {
-                        //Websocket is fully functional now
-                        };
-                        websocket.onmessage = function (event) {
-                        //Called every time the server sends a message
-                        };
-                        websocket.onerror = function (event) {
-                        //Called when there is an error communicating with the server
-                        }
-                        websocket.onclose = function (event) {
-                        //Called when the connection to the server is closed
-                        }
-                        //to send messages
-                        websocket.send("foo");
-                        //end communication
-                        websocket.close();
+var websocket = new Websocket("ws://myserver.com/path/to/connect");
+websocket.onopen = function (event) {
+//Websocket is fully functional now
+};
+websocket.onmessage = function (event) {
+//Called every time the server sends a message
+};
+websocket.onerror = function (event) {
+//Called when there is an error communicating with the server
+}
+websocket.onclose = function (event) {
+//Called when the connection to the server is closed
+}
+//to send messages
+websocket.send("foo");
+//end communication
+websocket.close();
                     </code></pre>
                 </section>
                 <section>
