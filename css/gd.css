@@ -81,3 +81,37 @@ button {
 .blaugrana {
     background-image: -webkit-linear-gradient(top, red 0%, blue 50%, blue 50%, red 100%);
 }
+footer {
+    padding-top: 10% !important;
+}
+button {
+    min-width: 150px;
+}
+.reveal pre {
+    width: 100%;
+}
+#swoosh {
+    height: 240px;
+    width: 100%;
+}
+#swoosh path {
+    stroke-linecap: square;
+    fill: none;
+    transition: stroke 0.5s;
+    -moz-transition: stroke 0.5s;
+    -o-transition: stroke 0.5s;
+    -ms-transition: stroke 0.5s;
+    -webkit-transition: stroke 0.5s;
+}
+#swoosh path.inner {
+    stroke: #A01215;
+    stroke-width: 80;
+}
+#swoosh path.inner {
+    stroke: #148a21;
+}
+#swoosh path.outer {
+    stroke: #017316;
+    stroke-width: 120;
+}
+

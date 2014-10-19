@@ -1,5 +1,5 @@
 #gamesSlides .logo {
-	background-image: url('../img/1024_GameDuell_logo.png'); 
+	background-image: url('../img/retina_GameDuell_logo.png'); 
 	background-size: cover;
 	width: 482px; 
 	height: 144px; 
@@ -38,7 +38,80 @@ ul.checkmark li:before {
 #example2.animate {
     -webkit-animation: myfirst 5s;
 }
+
+#gamesSlides .h1,
+#gamesSlides .h2,
+#gamesSlides .h3 {
+    font-family: 'Chewy', sans-serif;
+}
+
 @-webkit-keyframes myfirst {
     from {background: red;}
     to {background: blue;}
 }
+
+button {
+    min-width: 60px;
+    min-height: 40px;
+}
+
+.big.div {
+    width: 80px;
+    height: 80px;
+    margin: 10px auto !important;
+}
+
+.roundBorders {
+    -webkit-border-radius: 20px;
+}
+.circleBorders {
+    -webkit-border-radius: 40px;
+}
+
+.div.red {
+    background-color: red;
+}
+
+.large.div {
+    width: 380px;
+    height: 80px;
+    margin: 10px auto !important;
+}
+
+.blaugrana {
+    background-image: -webkit-linear-gradient(top, red 0%, blue 50%, blue 50%, red 100%);
+}
+footer {
+    padding-top: 10% !important;
+}
+button {
+    min-width: 150px;
+}
+.reveal pre {
+    width: 100%;
+}
+#swoosh {
+    height: 240px;
+    width: 100%;
+}
+#swoosh path {
+    stroke-linecap: square;
+    fill: none;
+    transition: stroke 0.5s;
+    -moz-transition: stroke 0.5s;
+    -o-transition: stroke 0.5s;
+    -ms-transition: stroke 0.5s;
+    -webkit-transition: stroke 0.5s;
+}
+#swoosh path.inner {
+    stroke: #A01215;
+    stroke-width: 80;
+}
+#swoosh path.inner {
+    stroke: #148a21;
+}
+#swoosh path.outer {
+    stroke: #017316;
+    stroke-width: 120;
+}
+
