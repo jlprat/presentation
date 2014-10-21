@@ -13,10 +13,16 @@
 	height: 200px;
 	margin: auto;
     -webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    transition: all 3s;
 }
 .rotate {
 	-webkit-transform: perspective( 400px ) rotateY( 45deg );
 	-webkit-transition: all 3s;
+	-moz-transform: perspective( 400px ) rotateY( 45deg );
+	-moz-transition: all 3s;
+	transform: perspective( 400px ) rotateY( 45deg );
+	transition: all 3s;
 }
 
 li.green {
@@ -37,6 +43,8 @@ ul.checkmark li:before {
 }
 #example2.animate {
     -webkit-animation: myfirst 5s;
+    -moz-animation: myfirst 5s;
+    animation: myfirst 5s;
 }
 
 #gamesSlides .h1,
@@ -46,6 +54,14 @@ ul.checkmark li:before {
 }
 
 @-webkit-keyframes myfirst {
+    from {background: red;}
+    to {background: blue;}
+}
+@-moz-keyframes myfirst {
+    from {background: red;}
+    to {background: blue;}
+}
+@keyframes myfirst {
     from {background: red;}
     to {background: blue;}
 }
@@ -63,9 +79,13 @@ button {
 
 .roundBorders {
     -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
 }
 .circleBorders {
     -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
 }
 
 .div.red {
@@ -80,6 +100,9 @@ button {
 
 .blaugrana {
     background-image: -webkit-linear-gradient(top, red 0%, blue 50%, blue 50%, red 100%);
+    background-image: -moz-linear-gradient(top, red 0%, blue 50%, blue 50%, red 100%);
+    background-image: linear-gradient(top, red 0%, blue 50%, blue 50%, red 100%);
+            
 }
 footer {
     padding-top: 10% !important;
